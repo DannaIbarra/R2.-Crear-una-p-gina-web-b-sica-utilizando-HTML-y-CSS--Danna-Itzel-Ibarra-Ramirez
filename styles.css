@@ -1,0 +1,178 @@
+body {
+    /* La ruta a tu archivo (ajusta el nombre si es necesario) */
+background-image: url('imagenes trabajo soñado/fondo.jfif');    
+    /* Esto es clave para que el fondo se vea bien */
+    background-size: cover;        /* Hace que la imagen cubra toda la pantalla */
+    background-position: center;   /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-attachment: fixed;  /* Hace que el fondo se quede quieto al bajar la página */
+    
+font-family: 'Arial', sans-serif; /* Define la fuente */
+    font-weight: bold;
+
+    /* Opcional: Esto ayuda a que el texto sobre el fondo sea legible */
+    min-height: 100vh;
+    margin: 0;
+}
+.herder h1 {
+    color: rgb(12, 3, 3);           /* Color de letra */
+    font-family: "Arial", sans-serif; /* Una letra limpia y moderna */
+    text-align: center;      /* Lo centra en la pantalla */
+    margin-top: 50px;        /* Un poco de espacio arriba */
+    font-size: 3rem;         /* Tamaño grande */
+}
+.contenedor-principal {
+    background-color: #a0f7b7f3; /* El color verde lima de tu boceto */
+    width: 100%;               /* Ancho del cuadro */
+    margin: 20px auto;        /* Centrado en la pantalla */
+    padding: 20px;            /* Espacio interno */
+    border: 4px solid rgba(235, 14, 147, 0.568);  /* Borde grueso estilo Y2K */
+}
+
+/* Estilo para el span que resalta tu puesto */
+
+.destacado {
+    background-color: #a2f1839f; /* Fondo amarillo */
+    color: #ff00ff;           /* Letra rosa */
+    font-weight: bold;        /* Negrita */
+    border: 1px solid rgba(0, 0, 0, 0.485);  /* Borde fino */
+}
+
+/* tabla */
+.tabla-retro {
+    width: 90%;
+    border: 2px solid rgba(7, 154, 233, 0.786);
+    margin-top: 15px;
+    background-color: rgba(172, 242, 221, 0.625);
+}
+
+.tabla-retro {
+    border-collapse: collapse; 
+}
+
+.tabla-retro th, .tabla-retro td {
+    padding: 10px; /* Esto da espacio al texto dentro de las celdas */
+    border: 1px solid rgba(7, 154, 233, 0.5); /* Esto define bien las líneas de la tabla */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estructura de dos columnas */
+
+
+/* Barra lateral morada */
+.barra-lateral {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caja-aptitud {
+    background-color: #f312e0; /* Morado */
+    color: white;
+    border: 4px solid rgb(157, 244, 17);
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.contenedor-principal {
+    flex: 1;
+    background-color: #d4f7a0; /* El verde lima de tu boceto */
+    border: 4px solid #9ce21161;
+    padding: 20px;
+}
+
+.herder {
+    display: flex;
+    flex-direction: column; /* Apila la fecha y el título verticalmente */
+    align-items: center;    /* Centra todo horizontalmente */
+    width: 100%;
+}
+.contenedor-fecha {
+    width: 100%;
+    text-align: right; /* Esto mueve todo lo que esté adentro a la derecha */
+    
+}
+
+.fecha-box {
+    background-color: #ec10ec;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block; /* Hace que la caja solo ocupe el espacio del texto */
+    border: 2px solid rgb(105, 205, 183);
+}
+
+/* Nuevo estilo específico para la imagen de la fecha */
+#fecha-actual + img {
+    width: 60px;       /* Ajusta este valor (en px) para cambiar el tamaño */
+    height: auto;       /* Mantiene la proporción original */
+    margin-left: 10px; /* Separa la imagen del texto de la fecha */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+}
+
+/* titulo */
+.contenedor-titulo {
+    display: flex;
+    justify-content: center; /* Esto es lo que centra el título */
+    width: 100%;
+    margin-bottom: 20px;
+}
+.caja-titulo {
+    background-color: #06f69aeb; /* El mismo morado que usas */
+    border: 4px solid rgba(0, 0, 0, 0.127);   /* El borde negro */
+    padding: 10px 20px;        /* Espacio interno para que no se pegue el texto */
+    display: inline-block;     /* Esto hace que el cuadro solo ocupe el espacio del título */
+    color: rgb(19, 1, 1);              /* Cambia el texto a blanco para que se vea bien en morado */
+    text-align: center;
+}
+
+/* Opcional: Para quitar el margen por defecto del h1 dentro del cuadro */
+.caja-titulo h1 {
+    margin: 0;
+}
+
+/*tamano de las imagenes*/
+imagen-estilo {
+    width: 100%;      /* La imagen ocupará el 100% del ancho de su contenedor */
+    max-width: 300px; /* Limitas el tamaño máximo para que no se vea gigante en pantallas grandes */
+    height: auto;     /* Esto es CLAVE: mantiene la proporción para que la imagen no se deforme */
+}
+.tarjeta-imagen {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    
+}
+
+.columna-imagenes {
+    display: flex;          /* Esto activa el modo fila */
+    flex-direction: row;    /* Fuerza la dirección horizontal */
+    justify-content: center; /* Centra las imágenes */
+    gap: 15px;              /* Un pequeño espacio entre ellas */
+    flex-wrap: wrap;        /* Permite que se acomoden si la pantalla es estrecha */
+}
+
+/* El contenedor padre debe estar en fila (row) para separar barra de contenido */
+.contenedor-padre {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; /* Alinea todo arriba */
+    width: 100%;
+}
+
+/* La barra lateral no debe crecer, mantén su tamaño fijo */
+.barra-lateral {
+    width: 250px;
+    flex-shrink: 0; /* Evita que la barra se encoja */
+}
+
+/* El contenido principal debe ocupar todo el espacio restante */
+.contenedor-columnas {
+    display: flex;
+    flex-direction: column; /* Esto apila imágenes, lista y tabla verticalmente */
+    flex: 1; /* Esto hace que ocupe todo el espacio a la derecha */
+    padding-left: 20px; /* Un poco de espacio entre la barra y el contenido */
+}
