@@ -1,6 +1,6 @@
 body {
     /* La ruta a tu archivo (ajusta el nombre si es necesario) */
-background-image: url('imagenes trabajo soñado/fondo.jfif');    
+background-image: url('fondo.jfif');    
     /* Esto es clave para que el fondo se vea bien */
     background-size: cover;        /* Hace que la imagen cubra toda la pantalla */
     background-position: center;   /* Centra la imagen */
